@@ -12,6 +12,7 @@ export default function Service(props) {
                     <Card.Text>
                         {desc}    
                     </Card.Text>
+                    <p>${price}</p>
                     <NavLink className="btn btn-primary" to={`/services/details/${id}`}>Read More</NavLink>
                 </Card.Body>
             </Card>
