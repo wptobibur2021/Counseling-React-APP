@@ -1,0 +1,49 @@
+[
+    {
+      "id": "1",
+      "name": "DEPRESSION TREATMENT",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k1.jpg",
+      "price": 30
+    },
+    
+    {
+      "id": "2",
+      "name": "RELATIONSHIP PROBLEMS",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k2.jpg",
+      "price": 330
+    },
+    
+    {
+      "id": "3",
+      "name": "SEXUAL COUNSELLING",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k3.jpg",
+      "price": 30
+    },
+    
+    {
+      "id": "4",
+      "name": "PERSONAL DEVELOPMENT",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k4.jpg",
+      "price": 50
+    },
+    
+    {
+      "id": "5",
+      "name": "COUPLES COUNSELLING",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k5.jpg",
+      "price": 30
+    },
+    
+    {
+      "id": "6",
+      "name": "ANXIETY COUNSELLING",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "photo": "./asserts/image/k6.jpg",
+      "price": 30
+    }
+  ]

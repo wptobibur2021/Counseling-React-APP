@@ -1,0 +1,18 @@
+.header-section-area {
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+a.menu-item {
+    text-decoration: none;
+    margin: 10px 20px;
+    color: #111;
+    font-weight: 500;
+}
+a.logo-text {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #111;
+    margin-right: 60px;
+}
