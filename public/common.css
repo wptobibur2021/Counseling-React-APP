@@ -8,3 +8,21 @@
 .login-page-sections {
     padding: 150px 0px;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color:aqua;
+}
+::-webkit-scrollbar-thumb{
+    background-color:aliceblue
+    border-radius: 5px
+}
+a {
+    text-decoration: blink !important;
+}

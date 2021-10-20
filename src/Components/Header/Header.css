@@ -16,3 +16,7 @@ a.logo-text {
     color: #111;
     margin-right: 60px;
 }
+svg.logoutIcon {
+    color: #fe0000;
+    margin-right: 5px;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Card, Button } from 'react-bootstrap'
+import { Col, Card } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 export default function Service(props) {
     const {name, desc, photo, price, id} = props.service
@@ -12,7 +12,7 @@ export default function Service(props) {
                     <Card.Text>
                         {desc}    
                     </Card.Text>
-                    <p>${price}</p>
+                    <p>Price: ${price}</p>
                     <NavLink className="btn btn-primary" to={`/services/details/${id}`}>Read More</NavLink>
                 </Card.Body>
             </Card>

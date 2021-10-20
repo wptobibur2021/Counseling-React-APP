@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Form, InputGroup, FormControl, Button} from 'react-bootstrap'
-import { FaLock, FaEnvelope } from 'react-icons/fa';
+import { FaLock, FaEnvelope, FaUser } from 'react-icons/fa';
 import useAuth from '../../Hooks/useAuth';
 import { NavLink } from 'react-router-dom';
 import { useLocation, useHistory } from 'react-router'
@@ -9,12 +9,13 @@ export default function Registration() {
     const history = useHistory()
     const redrirect_url = location.state?.from || '/'
     console.log('Patch Name: ', location.state?.from)
-    const {newUserCreate, emailHandle, passwordHandle} = useAuth()
+    const {newUserCreate, emailHandle, passwordHandle, updateUser, nameHandle} = useAuth()
     const newUserRegistration = e =>{
         e.preventDefault()
         newUserCreate()
         .then(result =>{
             history.push(redrirect_url)
+            updateUser()
         })
     }
     return (
@@ -24,9 +25,13 @@ export default function Registration() {
                 <Col md={{ span: 4, offset: 4 }} sm={{ span: 12 }}>
                     <div className="login-form-sections">
                         <div className="loginTitle">
-                            <h5>User <span>Login</span></h5>
+                            <h5>User <span>Registration</span></h5>
                         </div>
                         <Form onSubmit={newUserRegistration}>
+                            <InputGroup className="mb-3">
+                                <InputGroup.Text><FaUser/></InputGroup.Text>
+                                <FormControl onBlur={nameHandle} type="text" className="login-form" required placeholder="Name" />
+                            </InputGroup>
                             <InputGroup className="mb-3">
                                 <InputGroup.Text><FaEnvelope/></InputGroup.Text>
                                 <FormControl onBlur={emailHandle} type="email" className="login-form" required placeholder="Email" />

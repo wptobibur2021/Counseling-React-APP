@@ -3,3 +3,30 @@
     color: #fff;
     padding: 50px 0px;
 }
+ul.footerWidgets {
+    padding: 0px;
+}
+.footerIcon{
+    color: #6AB43E;
+    margin-right: 5px;
+    font-size: 20px;
+}
+li.widgetsItem {
+    margin-bottom: 15px;
+}
+ul.linkItems {
+    padding: 0;
+}
+li.item a {
+    color: #fff;
+}
+
+li.item {
+    border-bottom: 1px dashed #7ea367;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+h3.footer-title {
+    border-bottom: 1px solid #52e650dd;
+    margin-bottom: 25px;
+}

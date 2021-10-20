@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
 import AuthFirebase from "../Firebase/Initialize";
-import { onAuthStateChanged, signOut, createUserWithEmailAndPassword, getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, } from "firebase/auth";
-import toast, { Toaster } from 'react-hot-toast';
+import { updateProfile, onAuthStateChanged, signOut, createUserWithEmailAndPassword, getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, } from "firebase/auth";
 AuthFirebase()
 const useFirebase = () =>{
     const auth = getAuth();
@@ -10,6 +9,7 @@ const useFirebase = () =>{
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [email, setEmail] = useState('')
+    const [name, setName] = useState('')
     const [password, setPassword] = useState('')
 
     const sineInWithGoogle = () =>{
@@ -30,6 +30,10 @@ const useFirebase = () =>{
         setPassword(e.target.value)
     }
 
+    const nameHandle = e =>{
+        setName(e.target.value)
+    }
+
     // New User Registration
 
     const newUserCreate = () =>{
@@ -41,6 +45,15 @@ const useFirebase = () =>{
         // .catch((error) =>{
         //     setError(error.message)
         // })
+    }
+
+    // updateProfile 
+    const updateUser= () =>{
+        updateProfile(auth.currentUser, {
+            displayName: name
+        }).then((result) =>{
+            console.log(result)
+        })
     }
 
     // sineInWithPasswordEmail
@@ -70,13 +83,12 @@ const useFirebase = () =>{
     const logOut = () =>{
         signOut(auth).then(() => {
            setUser({})
-           toast.success('Successfully created!');
         }).catch((error) => {
             setError(error.message)
         });
     }
 
-    return{user, error, logOut, newUserCreate, sineInWithGoogle, emailHandle, passwordHandle, sineInWithPasswordEmail}
+    return{nameHandle, updateUser, user, error, logOut, newUserCreate, sineInWithGoogle, emailHandle, passwordHandle, sineInWithPasswordEmail}
 
 }
 export default useFirebase;

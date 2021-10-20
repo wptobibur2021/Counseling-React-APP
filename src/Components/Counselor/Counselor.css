@@ -1,0 +1,18 @@
+ul.socialMediaItems {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+li.SMItem {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #6AB43E;
+    padding: 4px 12px;
+    color: #fff;
+}
+.counselorPageSection {
+    padding: 50px 0px;
+}

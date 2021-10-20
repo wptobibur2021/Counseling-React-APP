@@ -1,0 +1,22 @@
+.aboutPageLeftBar img {
+    width: 550px;
+    margin-bottom: 30px;
+}
+.aboutPageSections {
+    padding: 50px;
+    background: #F0F2F5;
+}
+
+.aboutSingleItem {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconAbout svg {
+    font-size: 45px;
+    background-color: #6AB43E;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}

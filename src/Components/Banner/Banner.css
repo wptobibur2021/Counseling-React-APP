@@ -3,3 +3,30 @@
     height: 500px;
     object-fit: cover
   }
+
+ul.alice-carousel__dots {
+    display: none;
+}
+
+.alice-carousel__prev-btn {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 200px;
+    background-color: #00000080;
+    width: 45px !important;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.alice-carousel__next-btn {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  background-color: #00000080;
+  width: 45px !important;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}

@@ -6,7 +6,7 @@ export default function BannerButtom() {
         <div className="BannerButtom-Secation section">
             <Container>
                 <Row>
-                    <Col md={4}>
+                    <Col className="mb-3" md={4}>
                     <div className="single-section-banner-buttom">
                         <Card>
                             <Card.Body>
@@ -22,7 +22,7 @@ export default function BannerButtom() {
                         </Card>
                     </div>
                     </Col>
-                    <Col md={4}>
+                    <Col className="mb-3" md={4}>
                     <div className="single-section-banner-buttom">
                         <Card className="text-center">
                             <Card.Body>
@@ -36,7 +36,7 @@ export default function BannerButtom() {
                         </Card>
                     </div>
                     </Col>
-                    <Col md={4}>
+                    <Col className="mb-3" md={4}>
                         <div className="single-section-banner-buttom">
                             <Card className="text-center">
                                 <Card.Body>

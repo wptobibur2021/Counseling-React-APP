@@ -19,14 +19,16 @@ export default function Header() {
                             navbarScroll
                         >
                             <NavLink className="menu-item" to='/'>Home</NavLink>
+                            <NavLink className="menu-item" to='/about'>About</NavLink>
+                            <NavLink className="menu-item" to='/counselor'>Counselor</NavLink>
                             {
                                 user?.email ?
                                 <NavDropdown title={user.displayName} id="navbarScrollingDropdown">
-                                    <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                                    
+                                    <NavDropdown.Item><NavLink to='/about' className="menu-item">About Us</NavLink></NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item onClick={logOut}>
-                                        <FaPowerOff/> Logout
+                                        <FaPowerOff className="logoutIcon menu-item"/> Logout
                                     </NavDropdown.Item>
                                 </NavDropdown>
                                 :

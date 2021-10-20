@@ -13,6 +13,8 @@ import PrivateRoute from './PrivateRoute';
 import Profile from '../Components/Profile/Profile';
 import Details from '../Components/Details/Details';
 import NotFound from '../Components/notFound/NotFound';
+import About from '../Pages/About/About';
+import Counselor from '../Components/Counselor/Counselor';
 export default function RouterNav() {
     return (
         <Router>
@@ -33,6 +35,12 @@ export default function RouterNav() {
                 <PrivateRoute exact path='/services/details/:id'>
                     <Details></Details>
                 </PrivateRoute>
+                <Route exact path='/about'>
+                    <About></About>
+                </Route>
+                <Route exact path='/counselor'>
+                    <Counselor></Counselor>
+                </Route>
                 <Route path='*'>
                     <NotFound></NotFound>
                 </Route>

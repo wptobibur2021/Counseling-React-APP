@@ -1,3 +1,4 @@
+import './Services.css'
 import React, {useState, useEffect} from 'react'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import Service from './Service'
@@ -13,7 +14,7 @@ export default function Services() {
         <div className="service-sections-area">
             <div className="section-title text-center">
                 <Container>
-                    <Row>
+                    <Row className='mb-5'>
                         <Col md={12}>
                             <h1>OUR <span>SERVICES</span></h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autemvoluptatem obcaecati!</p>

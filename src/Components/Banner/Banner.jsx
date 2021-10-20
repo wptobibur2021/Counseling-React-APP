@@ -6,6 +6,9 @@ export default function Banner() {
         <div className="banners-sections-area">
             <AliceCarousel autoPlay autoPlayInterval="1000">
                 <img src='./asserts/image/bg3.jpg' className="sliderimg"/>
+                <img src='./asserts/image/bg1.jpg' className="sliderimg"/>
+                <img src='./asserts/image/bg11.jpg' className="sliderimg"/>
+                <img src='./asserts/image/bg9.jpg' className="sliderimg"/>
                 <img src='./asserts/image/bg5.jpg' className="sliderimg"/>
             </AliceCarousel>
         </div>
